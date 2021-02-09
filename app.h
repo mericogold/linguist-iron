@@ -2,5 +2,6 @@ class CAddrInfo : public CAddress
 {
 
 public:
-    READWRITE(CAddress);
+    READWRITE(*(CAddress*)this);
+    READWRITE(source);
     
